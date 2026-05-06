@@ -78,6 +78,8 @@ Thresholds and models were selected only on `Bearing1_1`.
 | One-Class SVM | 0.9998 | 0.9994 | 0.9868 | 0.9756 | 0.9982 |
 | LSTM Autoencoder | 0.9994 | 0.9981 | 0.9708 | 0.9433 | 1.0000 |
 
+Rolling RMS achieves ROC-AUC 1.0 on the development bearing because FEMTO Bearing1_1 exhibits a near-instantaneous amplitude spike in the final files; this is a dataset property, not evidence of overfitting.
+
 Rolling RMS is the best development model. The LSTM autoencoder works, but it does not beat the energy baseline on this bearing.
 
 ### Frozen Threshold Transfer
