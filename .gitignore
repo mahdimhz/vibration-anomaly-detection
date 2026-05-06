@@ -7,6 +7,12 @@ venv/
 data/raw/*
 data/processed/*
 models/checkpoints/*
+!data/raw/FEMTO/
+!data/raw/FEMTO/.gitkeep
+!data/raw/IMS/
+!data/raw/IMS/.gitkeep
+!data/processed/
+!data/processed/.gitkeep
 
 *.pyc
 *.pyo
