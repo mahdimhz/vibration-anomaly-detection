@@ -1,0 +1,33 @@
+from pathlib import Path
+
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+DATA_RAW = ROOT_DIR / "data" / "raw"
+DATA_PROCESSED = ROOT_DIR / "data" / "processed"
+MODELS_DIR = ROOT_DIR / "models"
+REPORTS_DIR = ROOT_DIR / "reports"
+
+FEMTO_DIR = DATA_RAW / "FEMTO"
+IMS_DIR = DATA_RAW / "IMS"
+
+SEED = 42
+
+FEMTO_FS = 25_600
+IMS_FS = 20_480
+WINDOW_SIZE = 1_024
+OVERLAP = 0.5
+
+HEALTHY_RATIO = 0.6
+TRANSITION_RATIO = 0.2
+ANOMALY_SIGMA = 3.0
+
+LSTM_SEQ_LEN = 50
+LSTM_HIDDEN = 64
+LSTM_LATENT = 32
+LSTM_LAYERS = 2
+LSTM_EPOCHS = 50
+LSTM_BATCH = 32
+LSTM_LR = 1e-3
+
+IF_CONTAMINATION = 0.05
+OC_SVM_NU = 0.05
